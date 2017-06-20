@@ -3,7 +3,7 @@ FROM ubuntu
 MAINTAINER amanoese
 
 # update
-RUN apt-get update && apt-get install -y curl perl
+RUN apt-get update && apt-get install -y curl perl sudo
 
 # add user docker
 RUN groupadd -g 1000 docker && \
