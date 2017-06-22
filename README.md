@@ -26,15 +26,15 @@ current: v8.1.2
 
 install of stable version.
 ```bash
-$ docker -t nodebrew:full build . --build-arg nv=stable
+$ docker -t nodebrew:stable build . --build-arg nv=stable
 ```
 
 install of any version
 ```bash
-$ docker -t nodebrew:full build . --build-arg nv=any-node-versions unv=use-node-version
+$ docker -t nodebrew build . --build-arg nv=any-node-versions unv=use-node-version
 
 # example
-$ docker -t nodebrew:full build . --build-arg nv=v8.1.2
+$ docker -t nodebrew:v8.1.2 build . --build-arg nv=v8.1.2
 ```
 
 ## License
