@@ -13,11 +13,14 @@ $ docker -t nodebrew:full build .
 install of stable version
 ```bash
 $ docker -t nodebrew:full build . --build-arg nv=stable
+#default use node version is installed last version
 ```
 
 install of any version
 ```bash
-$ docker -t nodebrew:full build . --build-arg nv=anyversions unv=useversion
+$ docker -t nodebrew:full build . --build-arg nv=any-node-versions unv=use-node-version
+# example
+$ docker -t nodebrew:full build . --build-arg nv=v8.1.2
 ```
 
 ## License
