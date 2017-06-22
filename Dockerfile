@@ -2,17 +2,16 @@ FROM ubuntu
 
 MAINTAINER amanoese
 
-# nvs is install node versions
-ARG nv
-
-# unv is use node version
-ARG unv
-
 # update
 RUN apt-get update && apt-get install -y curl perl
 
 USER root
 ENV HOME /root
+
+# nvs is install node versions
+ARG nv
+# unv is use node version
+ARG unv
 
 # nodebrew + nodejs
 RUN curl -L git.io/nodebrew | perl - setup
